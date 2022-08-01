@@ -53,6 +53,7 @@ in order to run the application.
 #### Option A - Run the OS-specific launchers from the release build.
 
 The most recent version can be found here: 
+https://github.com/stanozm/spnp-gui/releases/tag/v1.0.1
 
 
 
