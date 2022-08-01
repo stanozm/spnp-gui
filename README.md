@@ -1,11 +1,6 @@
 # SPNP GUIv2
 
-This is a replacement for the old GUI tool for modelling of the Petri Nets with the extensions as defined by the SPNP
-package. The old GUI is aged and has usability issues. This new open-source application offers the same basic
-functionality with the better user experience and possibilities for further development by anyone interested in this
-project. This application is the output of my Master's
-thesis (https://is.muni.cz/th/trvza/?fakulta=1451;lang=en;id=239803), which covers the whole development process in
-detail.
+This is a replacement for the old GUI tool for modelling of the Petri Nets with the extensions as defined by the SPNP package. The old GUI is aged and has usability issues. This new open-source application offers the same basic functionality with the better user experience and possibilities for further development by anyone interested in this project. This application is the output of Adam Vanko's Master thesis (https://is.muni.cz/th/trvza/?fakulta=1451;lang=en;id=239803), which covers the whole development process in detail.
 
 ### Main Features
 
@@ -46,7 +41,7 @@ detail.
 
 ### Dependencies
 
-This application depends on package **SPNP Core**, located at https://github.com/aadamvanko/spnp-core, which contains
+This application depends on package **SPNP Core**, located at https://github.com/stanozm/spnp-core, which contains
 the general SRN model representation and transformation code for converting it to the CSPL (C source code runnable by
 the SPNP package).
 
@@ -55,13 +50,11 @@ in order to run the application.
 
 ### How To Run
 
-#### Option A - Run JAR File
+#### Option A - Run the OS-specific launchers from the release build.
 
-Release can be found here https://github.com/aadamvanko/spnp-gui/releases/download/v1.0/spnp-gui-1.0.jar.
+The most recent version can be found here: 
 
-```
-java -jar NAME_OF_THE_FILE.jar
-```
+
 
 #### Option B - Build the Current Source Code
 
@@ -72,11 +65,11 @@ Just copy and paste into terminal (make sure to have Maven and Git installed).
 ```
 rmdir /s /q spnp-core
 rmdir /s /q spnp-gui
-git clone https://github.com/aadamvanko/spnp-core
+git clone https://github.com/stanozm/spnp-core
 cd spnp-core
 call mvn clean install
 cd ..
-git clone https://github.com/aadamvanko/spnp-gui
+git clone https://github.com/stanozm/spnp-gui
 cd spnp-gui
 call mvn clean javafx:run
 ```
@@ -86,11 +79,11 @@ call mvn clean javafx:run
 ```
 rm -r spnp-core
 rm -r spnp-gui
-git clone https://github.com/aadamvanko/spnp-core
+git clone https://github.com/stanozm/spnp-core
 cd spnp-core
 mvn clean install
 cd ..
-git clone https://github.com/aadamvanko/spnp-gui
+git clone https://github.com/stanozm/spnp-gui
 cd spnp-gui
 mvn clean javafx:run
 ```
